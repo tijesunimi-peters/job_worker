@@ -16,8 +16,10 @@ Gem::Specification.new do |s|
   #   s.executables = `git ls-files -- bin/*`.split("\n").map { |f| File.basename(f) }
   s.require_paths = ["lib"]
   s.license = "MIT"
-  s.add_development_dependency "bundler"
-  s.add_development_dependency "minitest", ">= 5.0.0"
-  s.add_development_dependency "rake"
-  s.add_development_dependency "redis"
+  s.add_development_dependency "bundler", "~> 0"
+  s.add_development_dependency "minitest", "~> 5.0", ">= 5.0.0"
+  s.add_development_dependency "rake", "~> 0"
+  s.add_development_dependency "redis", "~> 0"
+  s.add_development_dependency "pry", "~> 0"
+  s.add_development_dependency "fugit", "~> 0"
 end

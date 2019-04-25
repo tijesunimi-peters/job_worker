@@ -1,0 +1,135 @@
+notification_scheduler:
+  every: '1m'
+  class: 'NotificationSchedulerJob'
+
+session_start:
+  every: '1m'
+  class: 'SessionStartJob'
+
+session_complete:
+  every: '1m'
+  class: 'SessionCompleteJob'
+
+
+inquiry_applied_cleanup:
+  every: '5m'
+  class: 'InquiryAppliedCleanupJob'
+
+inquiry_confirmed_cleanup:
+  every: '1m'
+  class: 'InquiryConfirmedCleanupJob'
+
+inquiry_rescheduled_cleanup:
+  every: '1m'
+  class: 'InquiryRescheduledCleanupJob'
+
+inquiry_missed_cleanup:
+  every: '1m'
+  class: 'InquiryMissedCleanupJob'
+
+project_invite_cleanup:
+  every: '5m'
+  class: 'ProjectInviteCleanupJob'
+
+project_applied_notify:
+  every: '1m'
+  class: 'ProjectAppliedNotifyJob'
+
+project_deactivated_notify:
+  every: '1m'
+  class: 'ProjectDeactivatedNotifyJob'
+
+oranization_api_identification:
+  every: '1m'
+  class: 'OrganizationApiIdentificationJob'
+
+linkedin:
+  every: '2m'
+  class: 'LinkedinJob'
+
+session_expire:
+  every: '1m'
+  class: 'SessionExpireJob'
+
+session_publish:
+  every: '1m'
+  class: 'SessionPublishJob'
+
+
+session_remind_reschedule:
+  every: '1m'
+  class: 'SessionRemindRescheduleJob'
+
+project_checkin:
+  every: '1m'
+  class: 'ProjectCheckinJob'
+
+project_recommendation_scheduler:
+  every: '1m'
+  class: 'ProjectRecommendationSchedulerJob'
+
+project_deactivated_cleanup:
+  every: '1m'
+  class: 'ProjectDeactivatedCleanupJob'
+
+project_applied_cleanup:
+  every: '1m'
+  class: 'ProjectAppliedCleanupJob'
+
+user_application_followup:
+  every: '1m'
+  class: 'UserApplicationFollowupJob'
+
+user_recommendation_precompute:
+  every: '1m'
+  class: 'UserRecommendationPrecomputeJob'
+
+
+project_low_interest_recommendation:
+  every: '1m'
+  class: 'ProjectLowInterestRecommendationJob'
+
+partner_report_scheduler:
+  every: '1m'
+  class: 'PartnerReportSchedulerJob'
+
+project_published_cleanup:
+  every: '1m'
+  class: 'ProjectPublishedCleanupJob'
+
+project_survery_import:
+  every: '1m'
+  class: 'ProjectSurveyImportJob'
+
+project_completed_followup:
+  every: '1m'
+  class: 'ProjectCompletedFollowupJob'
+
+admin_report_cleanup:
+  every: '1m'
+  class: 'Admin::ReportCleanupJob'
+
+move_exclusive_projects:
+  every: '1m'
+  class: 'MoveExclusiveProjectsJob'
+
+exclusive_project_transition_reminder:
+  every: '1m'
+  class: 'ExclusiveProjectTransitionReminderJob'
+
+inquiry_decision_update:
+  every: '1m'
+  class: 'InquiryDecisionUpdateJob'
+
+
+user_profile_delete_job:
+  every: '1m'
+  class: 'UserProfileCleanupJob'
+
+transition_local_projects:
+  every: '1m'
+  class: 'TransitionLocalProjectsJob'
+
+project_message_notification:
+  every: '1m'
+  class:  'ProjectMessageNotificationJob'

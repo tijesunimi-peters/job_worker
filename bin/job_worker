@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require_relative "../lib/job_worker/cli"
+
+cli = JobWorker::CLI.instance
+cli.parse
+cli.run
